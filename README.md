@@ -3,4 +3,4 @@
     <br></a>
 <br>
 Por: 
-<a href="https://github.com/OFaceOff">Gabriel Santiago (Face Off),</a>, <a>Icaro Delfino</a>, <a>Filipe Asafe Abreu Matos</a>, <a>Gabriel da Silva Henriques</a>.
+<a href="https://github.com/OFaceOff">Gabriel Santiago (Face Off),</a>, <a href="">Icaro Delfino</a>, <a href="">Filipe Asafe Abreu Matos</a>, <a href="">Gabriel da Silva Henriques</a>.
