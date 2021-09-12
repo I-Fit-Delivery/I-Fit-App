@@ -1,8 +1,8 @@
 var me = {};
-me.avatar = "https://res.cloudinary.com/face-studio/image/upload/v1631330408/I%20Fit/eva48x48_stresg.jpg";
+me.avatar = "https://res.cloudinary.com/face-studio/image/upload/v1631422542/I%20Fit/ted_t0gvpf.png";
 
 var you = {};
-you.avatar = "https://res.cloudinary.com/face-studio/image/upload/v1631329313/I%20Fit/newuser48x48_fro3ni.jpg";
+you.avatar = "https://res.cloudinary.com/face-studio/image/upload/v1620497253/I%20Fit/Favicon_pttyjh.png";
 
 function formatAMPM(date) {
     var hours = date.getHours();
@@ -72,11 +72,11 @@ $('body > div > div > div:nth-child(2) > span').click(function(){
 resetChat();
 
 //-- Print Messages
-insertChat("me", "<strong>Eva:</strong> Oi, meu nome é Eva e eu sou a assistente virtual da I Fit. ", 600);  
-insertChat("me", "<strong>Eva:</strong> ...", 1500);
-insertChat("me", "<strong>Eva:</strong> ...", 3500);
-insertChat("me", "<strong>Eva:</strong> ...",7000);
-insertChat("me", "<strong>Eva:</strong> ...", 9500);
-insertChat("you", "<strong>I Fit:</strong> Pressione 'continuar' para prosseguir.", 12000);
+insertChat("me", "<strong>Ted:</strong> Opa, eu sou o Ted, sou o assistente virtual do I Fit e serei seu guia hoje!!!", 600);  
+insertChat("me", "<strong>Ted:</strong> ...", 1500);
+insertChat("me", "<strong>Ted:</strong> ...", 3500);
+insertChat("me", "<strong>Ted:</strong> ...",7000);
+insertChat("me", "<strong>Ted:</strong> ...", 9500);
+insertChat("you", "<strong>I Fit:</strong> Pressione 'Continuar' para acessar nossa plataforma!", 12000);
 
 //-- NOTA: Não adianta usar o insertChat..
