@@ -95,14 +95,20 @@ input:focus{
 }
 :-moz-placeholder { /* Firefox 18- */
     color: #d4d4d4;
-}  
-
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .frame{
         height:620px;
     }
+}
+
+.sbar {
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    background-color: #39B54A;
 }
 
 /* Small devices (landscape phones, 576px and up) */

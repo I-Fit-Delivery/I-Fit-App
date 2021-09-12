@@ -28,7 +28,7 @@ function insertChat(who, text, time){
                         '<div class="msj macro">' +
                         '<div class="avatar"><img class="img-circle" style="width:100%;" src="'+ me.avatar +'" /></div>' +
                             '<div class="text text-l">' +
-                                '<p>'+ text +'</p>' +
+                                '<span>'+ text +'</span>' +
                                 '<p><small>'+date+'</small></p>' +
                             '</div>' +
                         '</div>' +
@@ -37,7 +37,7 @@ function insertChat(who, text, time){
         control = '<li style="width:100%;">' +
                         '<div class="msj-rta macro">' +
                             '<div class="text text-r">' +
-                                '<p>'+text+'</p>' +
+                                '<span>'+text+'</span>' +
                                 '<p><small>'+date+'</small></p>' +
                             '</div>' +
                         '<div class="avatar" style="padding:0px 0px 0px 10px !important"><img class="img-circle" style="width:100%;" src="'+you.avatar+'" /></div>' +                                
@@ -72,11 +72,11 @@ $('body > div > div > div:nth-child(2) > span').click(function(){
 resetChat();
 
 //-- Print Messages
-insertChat("me", "<strong>Eva:</strong> Oi, meu nome é Eva e eu a assistente virtual da I Fit. ", 600);  
+insertChat("me", "<strong>Eva:</strong> Oi, meu nome é Eva e eu sou a assistente virtual da I Fit. ", 600);  
 insertChat("me", "<strong>Eva:</strong> ...", 1500);
 insertChat("me", "<strong>Eva:</strong> ...", 3500);
 insertChat("me", "<strong>Eva:</strong> ...",7000);
 insertChat("me", "<strong>Eva:</strong> ...", 9500);
-insertChat("you", "<strong>I Fit:</strong> Pressione 'Pular expêriencia' para prosseguir.", 12000);
+insertChat("you", "<strong>I Fit:</strong> Pressione 'continuar' para prosseguir.", 12000);
 
 //-- NOTA: Não adianta usar o insertChat..
