@@ -73,10 +73,10 @@ resetChat();
 
 //-- Print Messages
 insertChat("me", "<strong>Ted:</strong> Opa, eu sou o Ted, sou o assistente virtual do I Fit e serei seu guia hoje!!!", 600);  
-insertChat("me", "<strong>Ted:</strong> O App está em Desenvolvimento, não tenho muitas respostas hoje", 1500);
-/*insertChat("me", "<strong>Ted:</strong> ...", 3500);
-insertChat("me", "<strong>Ted:</strong> ...",7000);
-insertChat("me", "<strong>Ted:</strong> ...", 9500);*/
+insertChat("me", "<strong>Ted:</strong> ...", 1500);
+insertChat("me", "<strong>Ted:</strong> ...", 3500);
+insertChat("me", "<strong>Ted:</strong> ...", 7000);
+insertChat("me", "<strong>Ted:</strong> ...", 9500);
 insertChat("you", "<strong>I Fit:</strong> Pressione 'Continuar' para acessar nossa plataforma!", 12000);
 
-//-- NOTA: Não adianta usar o insertChat...
+//-- NOTA: Não adianta usar o insertChat.. 

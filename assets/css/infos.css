@@ -1,0 +1,145 @@
+/*calendar*/
+:root 
+{
+	--ifitgreen: #39B54A;
+	--ifitblack: #202321;
+  }
+
+#calendar {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    float: left;
+}
+  
+.ui-datepicker {
+    font-size: 22px;
+}
+  
+.ui-datepicker a {
+    text-decoration: none;
+    color: #6a7883;
+}
+  
+.ui-datepicker table {
+    width: 100%;
+}
+  
+  
+  /*Styling the Header Section*/
+  
+.ui-datepicker-header {
+    height: 60px;
+    border-bottom: 1px solid var(--ifitblack);
+}
+  
+.ui-datepicker-title {
+    font-size: 1.5em;
+    color: #868686;
+    text-align: center;
+}
+  
+.ui-datepicker-prev,
+.ui-datepicker-next {
+    width: 12px;
+    height: 12px;
+    text-indent: 9999px;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: -12px;
+}
+  
+.ui-datepicker-prev {
+    float: left;
+    margin-left: 12px;
+}
+  
+.ui-datepicker-prev:after {
+    transform: rotate(45deg);
+}
+  
+.ui-datepicker-next {
+    float: right;
+    margin-right: 12px;
+  }
+  
+.ui-datepicker-next:after {
+    transform: rotate(-135deg);
+}
+  
+.ui-datepicker-prev:after,
+.ui-datepicker-next:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-left: 3px solid var(--ifitblack);
+    border-bottom: 3px solid var(--ifitblack);
+}
+  
+.ui-datepicker-calendar thead tr th span {
+    display: block;
+    width: 40px;
+    color: #bdc5cb;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 50px;
+}
+  
+  
+  /*Dates*/
+  
+.ui-state-default {
+    display: block;
+    color: #636df2;
+    line-height: 40px;
+    text-align: center;
+    font-size: 0.9em;
+    width: 40px;
+}
+  
+.ui-datepicker-other-month .ui-state-default {
+    color: #bdc5cb;
+}
+  
+  
+  /*active day*/
+  
+.ui-state-default:hover {
+    background: var(--ifitblack);
+    color: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 99px;
+    position: relative;
+    margin: -1px;
+}
+  
+.ui-datepicker-calendar .ui-state-highlight {
+    color: #ff0000;
+    font-weight: bold;
+}
+  
+.ui-datepicker-calendar .ui-state-active {
+    background: var(--ifitgreen);
+    color: #ffffff;
+    border: 1px solid var(--ifitblack);
+    border-radius: 99px;
+    position: relative;
+    margin: -1px;
+}
+  
+/* Responsive */
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
+}

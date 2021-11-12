@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/img/Favicon.png" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="assets/css/appdieta.css">
+		<title> I Fit App - Inicio</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="navigation">
+				<ul>
+					<li>
+						<a href="#">
+							<span class="icon"><ion-icon name="leaf"></ion-icon></span>
+							<span class="title">I Fit App</span>
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							<span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+							<span class="title">Inicio</span>
+						</a>
+					</li>
+					<li>
+						<a href="appdieta.html" class="active">
+							<span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+							<span class="title">Dieta</span>
+						</a>
+					</li>
+					<li>
+						<a href="dash-calc.html">
+							<span class="icon"><ion-icon name="calculator-outline"></ion-icon></span>
+							<span class="title">Calculadora de IMC</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+							<span class="title">Ajuda</span>
+						</a>
+					</li>
+					<li>
+						<a href="userconfig.html">
+							<span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+							<span class="title">Configurações</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+							<span class="title">Senha</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+							<span class="title">Sign Out</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- main -->
+			<div class="main">
+				<div class="topbar">
+					<div class="toggle">
+						<ion-icon name="menu-outline"></ion-icon>
+					</div>
+					<!-- search -->
+					<div class="search">
+						<label>
+							<input type="text" placeholder="Pesquisar">
+							<ion-icon name="search-outline"></ion-icon>
+						</label>
+					</div>
+					<!-- userImg -->
+					<div class="user">
+						<img src="assets/img/user.jpg">
+					</div>
+				</div>
+
+				<div class="details">
+					<!-- order details list -->
+					<div class="recentOrders">
+						<div class="cardHeader">
+							<h2> Minhas Informações</h2>							
+							<a href="#" class="btn">Ser Pro<ion-icon name="key"></ion-icon></a></div>
+						<div class="container-propert">
+							<div class="card-propert">
+								<div class="box">
+									<div class="percent">
+										<svg>
+											<circle cx="70" cy="70" r="70"></circle>
+											<circle cx="70" cy="70" r="70"></circle>
+										</svg>
+										<div class="number">
+											<h2>90<span>g</span></h2>
+										</div>
+									</div>
+									<h2 class="text">Fibras<ion-icon name="information-circle"></ion-icon></h2>
+								</div>
+							</div>
+							<div class="card-propert">
+								<div class="box">
+									<div class="percent">
+										<svg>
+											<circle cx="70" cy="70" r="70"></circle>
+											<circle cx="70" cy="70" r="70"></circle>
+										</svg>
+										<div class="number">
+											<h2>85<span>g</span></h2>
+										</div>
+									</div>
+									<h2 class="text">GORDURAS<ion-icon name="information-circle"></ion-icon></h2>
+								</div>
+							</div>
+							<div class="card-propert">
+								<div class="box">
+									<div class="percent">
+										<svg>
+											<circle cx="70" cy="70" r="70"></circle>
+											<circle cx="70" cy="70" r="70"></circle>
+										</svg>
+										<div class="number">
+											<h2>60<span>g</span></h2>
+										</div>
+									</div>
+									<h2 class="text">PROTEÍNAS<ion-icon name="information-circle"></ion-icon></h2>
+								</div>
+							</div>
+							<div class="card-propert">
+								<div class="box">
+									<div class="percent">
+										<svg>
+											<circle cx="70" cy="70" r="70"></circle>
+											<circle cx="70" cy="70" r="70"></circle>
+										</svg>
+										<div class="number">
+											<h2>5<span>g</span></h2>
+										</div>
+									</div>
+									<h2 class="text">CARBOIDRATO<ion-icon name="information-circle"></ion-icon></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- New Customers -->
+					<div class="recentCustomers">
+						<div class="cardHeader">
+							<h2> Titulo 2 </h2>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- Icons -->
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+		<!-- Menu -->
+		<script>
+			// MenuToggle
+			let toggle = document.querySelector('.toggle');
+			let navigation = document.querySelector('.navigation');
+			let main = document.querySelector('.main');
+
+			toggle.onclick = function(){
+				navigation.classList.toggle('active');
+				main.classList.toggle('active');
+			}
+
+			// add hovered class in selected list item
+			let list = document.querySelectorAll('.navigation li');
+			function activeLink(){
+				list.forEach((item) =>
+				item.classList.remove('hovered'));
+				this.classList.add('hovered');
+			}
+			list.forEach((item) => 
+			item.addEventListener('mouseover',activeLink));
+		</script>
+	</body>
+</html>

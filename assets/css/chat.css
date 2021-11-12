@@ -97,6 +97,7 @@ input:focus{
     color: #d4d4d4;
 }
 .sbar {
+    z-index: 1000;
     color: white;
     font-weight: 600;
     background-color: #39B54A;
