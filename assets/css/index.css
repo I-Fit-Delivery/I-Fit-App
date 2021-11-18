@@ -173,7 +173,7 @@
 		display: none
 		
 			display: none
-		&:checked + label 
+		    &:checked + label 
 			padding: 5px 15px 
 			background: $primario
 			border-radius: 2px
@@ -216,6 +216,8 @@
 	position:Relative;
 	top:1px;
 }
+
+
 /*PopOut*/
 .popup .overlay {
     position:fixed;
