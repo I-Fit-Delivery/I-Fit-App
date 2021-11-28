@@ -463,6 +463,21 @@
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
 	<script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
 
+    <!-- Mudança no <title> -->
+    <script>
+        //script para mudar <title>
+            let showingAlert = false;
+            const interval = setInterval (() => {
+                document.title = showingAlert
+                ? 'I Fit App - Inicio': '(2) Novas notificações';
+            
+                showingAlert = !showingAlert;
+            }, 1000);
+            
+            // Para parar o alerta
+            // clearInterval(interval);
+    </script>
+
 	<!-- Main JS -->
 	<script src="assets/js/main.js"></script>
 
