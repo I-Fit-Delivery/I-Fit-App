@@ -1,0 +1,751 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+:root 
+{
+	--ifitgreen: #39B54A;
+  --ifitgreen2: #5ec06b;
+	--ifitblack: #202321;
+  --statsgray: #A9A9A9;
+}
+
+.btn { 
+  display: inline-block; *display: inline; *zoom: 1; padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; color: #333333; text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(top, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0); border-color: #e6e6e6 #e6e6e6 #e6e6e6; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #e6e6e6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); cursor: pointer; *margin-left: .3em; 
+}
+
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
+  background-color: #e6e6e6; 
+}
+
+.btn-large { 
+  padding: 9px 14px; font-size: 15px; line-height: normal; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
+}
+
+.btn:hover { 
+  color: #333333; text-decoration: none; background-color: #e6e6e6; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear; 
+}
+
+.btn-primary, .btn-primary:hover {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); color: #ffffff; 
+}
+
+.btn-primary.active {
+  color: rgba(255, 255, 255, 0.75); 
+}
+
+.btn-primary { 
+  background-color: var(--ifitgreen); background-image: -moz-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -ms-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--ifitgreen2)), to(var(--ifitgreen))); background-image: -webkit-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -o-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=var(--ifitgreen2), endColorstr=var(--ifitgreen), GradientType=0);  border: 1px solid var(--ifitgreen); text-shadow: 1px 1px 1px rgba(0,0,0,0.4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+  filter: none; background-color: var(--ifitgreen); }
+.btn-block { width: 100%; display:block; }
+
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+body {
+	font-family: "Open Sans";
+	background: #202321;
+}
+
+.login { 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:300px;
+	height:300px;
+}
+
+.login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+
+input { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+
+input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+#logo {
+  width: 250px;
+  cursor: pointer;
+  pointer-events:none;
+}
+
+#logo2 {
+  width: 160px;
+  filter: brightness(200%);
+  cursor: pointer;
+  pointer-events:none;
+}
+
+#avatar {
+  width: 30px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+#user {
+  vertical-align: middle;
+}
+
+#navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+  
+}
+
+ul {
+  margin-left: auto;
+  display: inline-block;
+  padding: 20px;
+}
+
+li {
+  font-family: Arial;
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 2em;
+    letter-spacing: 0px;
+    display: inline;
+    padding: 80px;
+    cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #010102;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 10px 10px 10px 10px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 6px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-family: Arial;
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 2em;
+    letter-spacing: 0px;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #C6C7C8;
+}
+
+li:hover {
+  color: #C6C7C8;
+}
+
+.nft-img {
+  width: 400px;
+  text-align: right;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.4fr;
+  gap: 0px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "description nft"
+    "footer footer";
+  margin-top: 100px;
+}
+
+.description { 
+  grid-area: description; 
+  color: white;
+  margin-left: 100px;
+  width: 700px;
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+.nft { 
+  grid-area: nft;
+  margin-left: 100px;
+}
+
+.footer { grid-area: footer; }
+
+h4 {
+  color: #E2E2E2;
+}
+
+#creator {
+  width: 70px;
+  border-radius: 20px;
+}
+
+#username {
+  color: var(--ifitgreen);
+}
+
+#logout {
+  color: #910000;
+}
+
+#create {
+  height: 130px;
+  width: 300px;
+  padding: 20px;
+}
+
+#eth {
+  width: 20px;
+  margin-left: 5px;
+  margin-top: 2px;
+  pointer-events:none;
+}
+
+#bid {
+  width: 120px;
+  height: 60px;
+  vertical-align:middle;
+}
+
+span {
+ float: right;
+}
+
+#buy-btn {
+  width: 100px;
+  height: 30px;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  background-color: var(--ifitgreen); background-image: -moz-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -ms-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--ifitgreen2)), to(var(--ifitgreen))); background-image: -webkit-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -o-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=var(--ifitgreen2), endColorstr=var(--ifitgreen), GradientType=0);  border: 1px solid var(--ifitgreen); text-shadow: 1px 1px 1px rgba(0,0,0,0.4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); 
+  color: white;
+  margin-bottom: 10px;
+}
+
+#search {
+  width: 100px;
+  height: 30px;
+  color: white;
+  border-radius: 10px;
+  background-color: var(--ifitgreen); background-image: -moz-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -ms-linear-gradient(top, #6eb6de, #4a77d4); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--ifitgreen2)), to(var(--ifitgreen))); background-image: -webkit-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -o-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=var(--ifitgreen2), endColorstr=var(--ifitgreen), GradientType=0);  border: 1px solid var(--ifitgreen); text-shadow: 1px 1px 1px rgba(0,0,0,0.4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); 
+  color: white;
+  margin-bottom: 10px;
+}
+
+#search:hover {
+  cursor: pointer;
+  filter: brightness(110%);  
+}
+
+#buy {
+  position: absolute;
+  left: 430px;
+  top: 365px;
+  color: white;
+}
+
+#wallet {
+  width: 360px;
+  height: 30px;
+}
+
+.footer {
+  text-align: center;
+  left: 50%;
+}
+
+#market {
+  border-radius: 15px 0 0 15px;
+  background-color: var(--ifitgreen); background-image: -moz-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -ms-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--ifitgreen2)), to(var(--ifitgreen))); background-image: -webkit-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -o-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=var(--ifitgreen2), endColorstr=var(--ifitgreen), GradientType=0);  border: 1px solid var(--ifitgreen); text-shadow: 1px 1px 1px rgba(0,0,0,0.4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); 
+  width: 150px;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+#myprofile {
+  background-color: var(--ifitgreen);
+  width: 150px;
+  height: 50px;
+  background: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+#myprofile:hover {
+  filter: brightness(200%);
+}
+
+#market:hover {
+  filter: brightness(110%);
+}
+
+#buy-btn:hover {
+  cursor: pointer;
+  filter: brightness(110%);  
+}
+
+a, a:visited, a:hover, a:active {
+  color: var(--ifitgreen);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position:fixed;
+  background: var(--ifitblack);
+  width: 80%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  border:1px solid var(--ifitgreen);
+  color: white;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+#nft-collection {
+  width: 250px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#wallet-nft {
+    display: inline-block;
+}
+
+#close-btn {
+  background-color: var(--ifitgreen); background-image: -moz-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -ms-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--ifitgreen2)), to(var(--ifitgreen))); background-image: -webkit-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: -o-linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-image: linear-gradient(top, var(--ifitgreen2), var(--ifitgreen)); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=var(--ifitgreen2), endColorstr=var(--ifitgreen), GradientType=0);  border: 1px solid var(--ifitgreen); text-shadow: 1px 1px 1px rgba(0,0,0,0.4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); 
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#close-btn:hover {
+  color: #333333;
+  cursor: pointer;
+}
+
+img:hover {
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0.4;
+  -webkit-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  cursor: pointer;
+}
+
+h1, h4, h2 {
+ text-shadow: 0 2px 0 rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 1850px) and (max-width: 1950px) {
+  .nft-img {
+    width: 600px;
+    margin-left: 120px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 25px;
+  }
+  #buy {
+    left: 430px;
+    top: 565px;
+  }
+  #wallet {
+    width: 520px;
+    height: 45px;
+  }
+  #buy-btn {
+    height: 45px;
+  }
+  #market,#myprofile {
+    width: 250px;
+    height: 80px;
+  }
+  #nft-collection {
+    width: 350px;
+  }
+  #logo {
+    width: 350px;
+  }
+  #logo2 {
+    width: 200px;
+  }
+  .login {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1650px) and (max-width: 1750px) {
+  .nft-img {
+    width: 500px;
+    margin-left: 120px;
+  }
+  h1 {
+    font-size: 46px;
+  }
+  p {
+    font-size: 18px;
+  }
+  #buy {
+    left: 430px;
+    top: 430px;
+  }
+  #wallet {
+    width: 520px;
+    height: 45px;
+  }
+  #buy-btn {
+    height: 45px;
+  }
+  #market,#myprofile {
+    width: 220px;
+    height: 60px;
+  }
+  #nft-collection {
+    width: 280px;
+  }
+  #logo {
+    width: 350px;
+  }
+  #logo2 {
+    width: 200px;
+  }
+  .login {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1750px){
+  .nft-img {
+    width: 500px;
+    margin-left: 120px;
+  }
+  h1 {
+    font-size: 46px;
+  }
+  p {
+    font-size: 18px;
+  }
+  #buy {
+    left: 430px;
+    top: 430px;
+  }
+  #wallet {
+    width: 480px;
+    height: 45px;
+  }
+  #buy-btn {
+    height: 45px;
+  }
+  #market,#myprofile {
+    width: 220px;
+    height: 60px;
+  }
+  #nft-collection {
+    width: 280px;
+  }
+  #logo {
+    width: 350px;
+  }
+  #logo2 {
+    width: 200px;
+  }
+  .login {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .nft-img {
+    width: 350px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 15px;
+  }
+  #buy {
+    left: 430px;
+    top: 370px;
+  }
+  #wallet {
+    width: 330px;
+    height: 45px;
+  }
+  #buy-btn {
+    height: 45px;
+  }
+  #market,#myprofile {
+    width: 220px;
+    height: 60px;
+  }
+  #nft-collection {
+    width: 250px;
+  }
+  #logo {
+    width: 350px;
+  }
+  #logo2 {
+    width: 200px;
+  }
+  .login {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1050px) {
+  .nft-img {
+    width: 250px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
+  #buy {
+    left: 430px;
+    top: 330px;
+  }
+  #wallet {
+    width: 330px;
+    height: 45px;
+  }
+  #buy-btn {
+    height: 45px;
+  }
+  #market,#myprofile {
+    width: 120px;
+    height: 50px;
+  }
+  #nft-collection {
+    width: 200px;
+  }
+  #logo {
+    width: 350px;
+  }
+  #logo2 {
+    width: 200px;
+  }
+  .login {
+    width: 400px;
+  }
+  .description {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 900px) {
+  .nft-img {
+    width: 250px;
+    margin-left: -220px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
+  #buy {
+    left: 430px;
+    top: 370px;
+  }
+  #wallet {
+    width: 200px;
+    height: 45px;
+  }
+  #buy-btn {
+    height: 45px;
+  }
+  #market,#myprofile {
+    width: 120px;
+    height: 50px;
+  }
+  #nft-collection {
+    width: 250px;
+  }
+  #logo {
+    width: 350px;
+  }
+  #logo2 {
+    display: none;
+  }
+  .login {
+    width: 400px;
+  }
+  .description {
+    width: 320px;
+  }
+  #navbar {
+    width: 900px;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  html {
+    height:100%;
+
+    min-width: 300px;
+    overflow-x: scroll;
+  }
+  .nft-img {
+    width: 380px;
+    position: absolute;
+    left: 15px;
+    top: 70px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 13px;
+  }
+  p {
+    font-size: 12px;
+  }
+  #buy {
+    width: 350px;
+    position: absolute;
+    left: 0;
+    top: 350px;
+  }
+  #wallet {
+    width: 250px;
+    height: 35px;
+  }
+  #buy-btn {
+    height: 35px;
+  }
+  #market,#myprofile {
+    width: 210px;
+    height: 50px;
+    border-radius: 0;
+  }
+  #market {
+    position: absolute;
+    left:0;
+    top: 900px;
+  }
+  #myprofile {
+    position: absolute;
+    left:220px;
+    top: 900px;
+  }
+  #nft-collection {
+    width: 150px;
+  }
+  #logo {
+    width: 250px;
+  }
+  #logo2 {
+    width: 120px;
+  }
+  .login {
+    width: 270px;
+  }
+  .description {
+    width: 400px;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 360px;
+  }
+  #navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #070B12;
+  }
+  ul {
+    padding: -10px;
+  }
+  #create {
+    width: 300px;
+    font-size: 14px;
+  }
+  #creator {
+    width: 40px;
+  }
+  #eth {
+    width: 12px;
+  }
+  #research, #info, #notify {
+  display: none;
+}
+}
