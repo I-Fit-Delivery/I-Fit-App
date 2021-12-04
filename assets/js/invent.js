@@ -186,19 +186,19 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
         React.createElement("h1", null, "SALDO: 12 ", /*#__PURE__*/React.createElement("img", { id: "eth", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/1200px-Ethereum-icon-purple.svg.png" }), " ETH"), /*#__PURE__*/
         React.createElement("h2", null, "Carteira de NFTs:"), /*#__PURE__*/
         React.createElement("div", { id: "wallet-nft" }, /*#__PURE__*/
-        React.createElement("img", { id: "nft-collection", src: "#" }), /*#__PURE__*/
+        React.createElement("img", { id: "nft-collection", src: "https://res.cloudinary.com/face-studio/image/upload/v1636786217/Fit%20Game/create4texture_uxecuw.jpg" }), /*#__PURE__*/
         React.createElement("p", { id: "img-description" }, "#3749")), /*#__PURE__*/
   
         React.createElement("div", { id: "wallet-nft" }, /*#__PURE__*/
-        React.createElement("img", { id: "nft-collection", src: "#" }), /*#__PURE__*/
+        React.createElement("img", { id: "nft-collection", src: "https://res.cloudinary.com/face-studio/image/upload/v1636785723/Fit%20Game/crate3_ofuzyb.jpg" }), /*#__PURE__*/
         React.createElement("p", { id: "img-description" }, "#1957")), /*#__PURE__*/
   
         React.createElement("div", { id: "wallet-nft" }, /*#__PURE__*/
-        React.createElement("img", { id: "nft-collection", src: "#" }), /*#__PURE__*/
+        React.createElement("img", { id: "nft-collection", src: "https://res.cloudinary.com/face-studio/image/upload/v1636786758/Fit%20Game/crate5_antoeq.jpg" }), /*#__PURE__*/
         React.createElement("p", { id: "img-description" }, "#3559")), /*#__PURE__*/
   
         React.createElement("div", { id: "wallet-nft" }, /*#__PURE__*/
-        React.createElement("img", { id: "nft-collection", src: "#" }), /*#__PURE__*/
+        React.createElement("img", { id: "nft-collection", src: "https://res.cloudinary.com/face-studio/image/upload/v1636777121/Fit%20Game/crate2_gvr03q.png" }), /*#__PURE__*/
         React.createElement("p", { id: "img-description" }, "#1649")))));
   
   

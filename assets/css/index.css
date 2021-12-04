@@ -147,25 +147,6 @@
     width: 9%;
 }
 
-.inv {
-    text-align: center;
-    justify-content: center;
-}
-
-.inv a {
-    color: #333333;
-}
-
-.inv h1 {
-    font-weight: 800;
-}
-
-.inv img {
-    border-radius: 15px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
-
 .formulario-container {
     position: relative;
     overflow: hidden;
